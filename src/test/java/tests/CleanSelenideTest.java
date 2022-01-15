@@ -12,7 +12,7 @@ import static org.openqa.selenium.By.partialLinkText;
 public class CleanSelenideTest {
 
     @Test
-    public void IssueNameValidationSelenideTest() {
+    public void issueNameValidationSelenideTest() {
         open("https://github.com");
 
         $(".header-search-input").click();

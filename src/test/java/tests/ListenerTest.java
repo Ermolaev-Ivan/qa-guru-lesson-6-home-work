@@ -20,7 +20,7 @@ public class ListenerTest {
     @Owner("Ermolaev Ivan")
     @Story("Проверка наличия вкладки Issues в репозитории")
     @DisplayName("Проверка наличия вкладки Issues в репозитории листенером")
-    public void IssueNameValidationSelenideTest() {
+    public void issueNameValidationSelenideTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         open("https://github.com");
 
