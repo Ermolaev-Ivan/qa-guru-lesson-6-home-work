@@ -31,9 +31,9 @@ public class LambdaTest {
             $(".header-search-input").submit();
         });
         step("Переходим в " + REPOSITORY, () -> {
-            $(linkText("eroshenkoam/allure-example")).click();
+            $(linkText(REPOSITORY)).click();
         });
-        step("Проверяем что в " + REPOSITORY + " есть Issues", () -> {
+        step("Проверяем что в " + REPOSITORY + " есть вкладка Issues", () -> {
             $(partialLinkText("Issues")).shouldBe(Condition.visible);
             $(partialLinkText("Issues")).shouldHave(text("Issues"));
         });
